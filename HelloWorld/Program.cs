@@ -23,15 +23,22 @@ namespace HelloWorld
 
 
             Person luca = new Person("Luca", "Lippi");
-            luca.eta = 18;
+            luca.age = 18;
 
             Console.WriteLine(luca.Anagrafica());
 
             Person giovanni = luca;
-            giovanni.nome = "Giovanni";
+            giovanni.name = "Giovanni";
 
             Console.WriteLine(luca.Anagrafica());
             Console.WriteLine(giovanni.Anagrafica());
+
+            Person andrea = new Person("Andrea", "Parodi", 172, 68.5);
+
+            //Console.WriteLine(andrea.CalculateBMI());
+            Console.WriteLine(andrea.Anagrafica());
+
+
 
         }
     }
